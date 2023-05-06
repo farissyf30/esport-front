@@ -1,0 +1,434 @@
+* {
+    &:focus {
+        outline: none;
+    }
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: 700;
+}
+
+.btn-gradient-primary {
+    background: linear-gradient(268.15deg, #ff1801 15.47%, #ff5e01 91.45%);
+    color: #fff;
+    border: 0;
+    transition: all 0.4s ease-in-out;
+    &:hover {
+        background: linear-gradient(214.02deg, #e45c01 6.04%, #eb0d01 92.95%);
+    }
+}
+.btn-gradient-primary-2 {
+    background: linear-gradient(268.15deg, #ff1801 15.47%, #ff5e01 91.45%);
+    color: #fff;
+    border: 0;
+    transition: all 0.4s ease-in-out;
+    &:hover {
+        background: linear-gradient(214.02deg, #e45c01 6.04%, #eb0d01 92.95%);
+    }
+}
+
+.page-wrapper {
+    padding-top: 168px;
+    min-height: 100%;
+    @include media-breakpoint-down(md) {
+        padding-top: 69px;
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .m-none {
+        display: none;
+    }
+}
+
+.form-control {
+    background: linear-gradient(92.01deg, rgba(255, 255, 255, 0.02) -8.99%, rgba(255, 255, 255, 0.14) 101.74%);
+}
+
+.title-h1 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 68px;
+    @include media-breakpoint-down(md) {
+        font-size: 30px;
+        line-height: auto;
+    }
+}
+
+a.text-white:hover {
+    color: $primary !important;
+}
+
+.text-grey {
+    color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.input-inline {
+    position: relative;
+    &.is-left {
+        .input-icon {
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        input {
+            padding-left: 35px;
+        }
+    }
+}
+
+.dropdown-toggle::after {
+    border: 0;
+    width: 10px;
+    height: 10px;
+    background: url(../images/arrow-down.svg) no-repeat center center/contain;
+}
+
+.title-3 {
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.wd-778 {
+    max-width: 728px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.col-divider {
+    border-left: 1px #fff solid;
+    &:first-child {
+        border: 0;
+    }
+    @include media-breakpoint-down(lg) {
+        border: 0;
+    }
+}
+
+.card {
+    background: linear-gradient(116.52deg, rgba(255, 255, 255, 0.11) -0.3%, rgba(255, 255, 255, 0.1) 81.34%);
+}
+
+.img-mission {
+    border-radius: 50%;
+    width: 63px;
+    height: 63px;
+    object-fit: cover;
+}
+
+.title-4 {
+    font-size: 20px;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.nav .nav-link.active {
+    color: $primary;
+}
+.card-header {
+    border-color: #fff;
+}
+
+.ico-white {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(96%) saturate(15%) hue-rotate(212deg) brightness(104%)
+        contrast(104%);
+}
+
+.filter-btn {
+    display: none;
+    color: #fff;
+    text-decoration: none;
+    @include media-breakpoint-down(md) {
+        display: table;
+        margin-bottom: 20px;
+        margin-left: auto;
+    }
+}
+
+.overlay {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba($color: #000000, $alpha: 0.4);
+    z-index: 999;
+}
+
+.accordion-button {
+    font-size: 20px;
+}
+
+.accordion-flush .accordion-item .accordion-button.collapsed {
+    border-radius: 10px;
+    background: linear-gradient(90.31deg, rgba(255, 255, 255, 0.22) 23.53%, rgba(255, 255, 255, 0.22) 81.33%);
+    border: 0 !important;
+    box-shadow: none !important;
+}
+
+.accordion-button:not(.collapsed) {
+    background: transparent;
+    color: #fff;
+    border-bottom: 1px #fff solid;
+    box-shadow: none;
+}
+
+.accordion-flush .accordion-item {
+    border: 0;
+    margin-bottom: 15px;
+}
+
+.detail {
+    p {
+        color: rgba(255, 255, 255, 0.5);
+    }
+}
+
+.form-light {
+    border: 0;
+    background: rgba(255, 255, 255, 0.1) !important;
+    border-radius: 10px;
+}
+
+.wd-384 {
+    max-width: 384px;
+}
+
+.brand-shop {
+    display: flex;
+    align-items: center;
+    .product-logo {
+        position: relative;
+        width: 80px;
+        height: 0;
+        padding-bottom: 80px;
+        overflow: hidden;
+        border-radius: 50%;
+        @include media-breakpoint-down(sm) {
+            width: 20px;
+            padding-bottom: 20px;
+        }
+        img {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 110%;
+            height: 110%;
+            object-fit: cover;
+        }
+    }
+    h3 {
+        font-weight: 600;
+        font-size: 16px;
+        margin-bottom: 0;
+        @include media-breakpoint-down(sm) {
+            font-size: 14px;
+        }
+    }
+}
+
+.rounded-10 {
+    border-radius: 10px !important;
+}
+
+.modal-content {
+    background: linear-gradient(116.52deg, rgba(255, 255, 255, 0.11) -0.3%, rgba(255, 255, 255, 0.1) 81.34%);
+    backdrop-filter: blur(10px);
+    /* Note: backdrop-filter has minimal browser support */
+
+    border-radius: 20px;
+}
+
+.modal-success {
+    padding: 40px 30px;
+    text-align: center;
+}
+
+.voucher-select {
+    cursor: pointer;
+    .card {
+        cursor: pointer;
+        position: relative;
+        &:before {
+            position: absolute;
+            content: "\2713";
+            color: transparent;
+            right: 15px;
+            top: 15px;
+        }
+    }
+    input {
+        opacity: 0;
+        position: absolute;
+    }
+    input:checked ~ .card {
+        background: linear-gradient(116.52deg, rgba(255, 255, 255, 0.3) -0.3%, rgba(255, 255, 255, 0.3) 81.34%);
+        &::before {
+            color: $primary;
+        }
+    }
+}
+
+.text-24 {
+    font-size: 24px;
+}
+
+.tr-ld {
+    flex: 0 0 195px;
+    max-width: 195px;
+}
+
+.wd-289 {
+    max-width: 289px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.card-wd-858 {
+    max-width: 858px;
+    margin: 0 auto;
+}
+
+.card-saldo {
+    max-width: 858px;
+    margin: 0 auto;
+    .saldo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+    @include media-breakpoint-down(sm) {
+        .p-4 {
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+        }
+    }
+}
+
+.form-wd {
+    display: flex;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+    > div {
+        padding: 0 20px;
+        &:first-child {
+            padding-left: 0;
+        }
+        &:last-child {
+            padding-right: 0;
+        }
+    }
+    > div:not(.smd) {
+        width: 25%;
+        @include media-breakpoint-down(lg) {
+            width: 31%;
+        }
+        @include media-breakpoint-down(md) {
+            width: 41%;
+            padding-left: 0;
+        }
+    }
+    .form-control {
+        border: 0;
+        background: transparent;
+        border-bottom: 1px #fff solid;
+        border-radius: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .smd {
+        padding-top: 42px;
+        @include media-breakpoint-down(md) {
+            padding-left: 0;
+        }
+    }
+    @include media-breakpoint-down(md) {
+        .platform-currency {
+            width: 100% !important;
+            max-width: 384px;
+            margin-bottom: 30px;
+        }
+    }
+    @include media-breakpoint-down(sm) {
+        label {
+            font-size: 14px;
+        }
+    }
+}
+
+.table-tp {
+    max-width: 640px;
+}
+
+.gallery-slider {
+    width: 100%;
+    .swiper-wrapper {
+        align-items: center;
+    }
+    .swiper-slide {
+        height: 100%;
+        text-align: center;
+        font-size: 18px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+    .swiper-button-prev,
+    .swiper-button-next {
+        color: #fff;
+    }
+}
+
+.modal-gallery {
+    .modal-content {
+        background: transparent;
+        border-radius: 0;
+        backdrop-filter: none;
+    }
+    .modal-fullscreen .modal-body {
+        overflow-y: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .modal-close {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        z-index: 99;
+        background: none;
+        border: 0;
+    }
+    .ico-close {
+        width: 40px;
+        height: 40px;
+    }
+}

@@ -1,0 +1,42 @@
+{% extends "src/layouts/layouts.html" %}
+{% block header %}
+{% include "src/components/header-logged.html" %}
+{% endblock %}
+{% block content %}
+
+<div class="page-wrapper">
+    <div class="container-lg mb-5">
+        <h1 class="title-3 my-4">Your Account</h1>
+        <ul class="nav nav-setting">
+            <li class="nav-item">
+                <a href="setting-password.html" class="nav-link">Password</a>
+            </li>
+            <li class="nav-item">
+                <a href="setting-order.html" class="nav-link">Orders</a>
+            </li>
+            <li class="nav-item">
+                <a href="setting-deactive.html" class="nav-link active">Deactive Account</a>
+            </li>
+        </ul>
+        <form action="#" style="max-width: 349px;">
+            <div class="mb-4">
+                <label class="mb-2">Reason for deactivation</label>
+               <textarea cols="30" rows="4" class="form-control" placeholder="Write Reason"></textarea>
+            </div>
+            <div class="mb-4">
+                <label class="mb-2">Username</label>
+                <input type="text" class="form-control" placeholder="Enter your username">
+            </div>
+            <div class="mb-4">
+                <label class="mb-2">Passphrase</label>
+                <input type="text" class="form-control" placeholder="Enter your Password">
+                <div class="form-text text-white">To verify type: <i class="text-primary">Please delete my account</i></div>
+            </div>
+            <div class="mt-5">
+                <button type="submit" class="btn btn-gradient-primary w-100">Save</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+{% endblock %}

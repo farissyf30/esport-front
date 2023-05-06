@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>E-Sport Fight Arena</title>
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="scss/styles.scss" />
+    <script type="module" src="./js/main.js"></script>
+</head>
+
+<body>
+    {% block header %}
+    {% endblock %}
+
+    {% block content %}
+    {% endblock %}
+    {% block footer %}
+    {% include "src/components/footer.html" %}
+    {% endblock %}
+    {% block js %}
+    {% endblock %}
+</body>
+
+</html>

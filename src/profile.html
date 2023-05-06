@@ -1,0 +1,128 @@
+{% extends "src/layouts/layouts.html" %}
+{% block header %}
+{% include "src/components/header-logged.html" %}
+{% endblock %}
+{% block content %}
+
+<div class="page-wrapper">
+    <div class="container-lg">
+        <div class="profile-header">
+            <div class="cover">
+                <img src="images/cover-empty.png" class="cover-preview" alt="">
+                <div class="edit-cover">
+                    <input type="file" class="cover-upload">
+                    <i class="ico ico-camera"></i>
+                </div>
+            </div>
+            <div class="profile-content">
+                <div>
+                    <div class="profile-img">
+                        <img src="images/profile.png" class="profile-preview" alt="">
+                        <div class="edit-profile">
+                            <input type="file" class="profile-upload">
+                            <i class="ico ico-camera"></i>
+                        </div>
+                    </div>
+                    <p class="text-primary text-center mt-4">
+                        Overview
+                    </p>
+                </div>
+                <div class="profile-data">
+                    <p class="name">Irfan</p>
+                    <p class="since">Member since December 2022</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card card-gr total-match">
+            <div class="card-body py-4 text-center">
+                <div class="count">0</div>
+                <p class="mb-0">Total Matches Play</p>
+            </div>
+        </div>
+
+        <h3 class="title-3 mt-5">
+            Top Finishes
+        </h3>
+
+        <div class="row mt-4 mb-5">
+            <div class="col-lg-3 col-md-6 my-3">
+                <div class="card card-gr">
+                    <div class="p-2">
+                        <div class="d-flex align-items-center">
+                            <div class="trop">
+                                <img src="images/trophy.svg" class="img-fluid" alt="">
+                                <p class="mb-0">1st</p>
+                            </div>
+                            <div class="divider">
+                                <div class="py-4 text-center">
+                                    <div class="count">0</div>
+                                    <p class="mb-0">Tournament won</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 my-3">
+                <div class="card card-gr">
+                    <div class="p-2">
+                        <div class="d-flex align-items-center">
+                            <div class="trop">
+                                <img src="images/trophy.svg" class="img-fluid" alt="">
+                                <p class="mb-0">2nd</p>
+                            </div>
+                            <div class="divider">
+                                <div class="py-4 text-center">
+                                    <div class="count">0</div>
+                                    <p class="mb-0">Tournament won</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 my-3">
+                <div class="card card-gr">
+                    <div class="p-2">
+                        <div class="d-flex align-items-center">
+                            <div class="trop">
+                                <img src="images/trophy.svg" class="img-fluid" alt="">
+                                <p class="mb-0">3rd/4th</p>
+                            </div>
+                            <div class="divider">
+                                <div class="py-4 text-center">
+                                    <div class="count">0</div>
+                                    <p class="mb-0">Tournament won</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 my-3">
+                <div class="card card-gr">
+                    <div class="p-2">
+                        <div class="d-flex align-items-center">
+                            <div class="trop">
+                                <p class="mb-0">Top 8</p>
+                            </div>
+                            <div class="divider">
+                                <div class="py-4 text-center">
+                                    <div class="count">0</div>
+                                    <p class="mb-0">Tournament won</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

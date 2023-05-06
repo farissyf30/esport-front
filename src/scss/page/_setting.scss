@@ -1,0 +1,115 @@
+.nav-setting {
+    border-bottom: 1px solid #ffffff;
+    padding-bottom: 15px;
+    margin-top: 30px;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    max-width: 542px;
+    .nav-item {
+        .nav-link {
+            color: #fff;
+            font-size: 20px;
+            &:hover,
+            &.active {
+                color: $primary;
+            }
+            @include media-breakpoint-down(md) {
+                font-size: 16px;
+                padding: 0 10px;
+            }
+        }
+        &:first-child {
+            .nav-link {
+                padding-left: 0;
+            }
+        }
+        &:last-child {
+            .nav-link {
+                padding-right: 0;
+            }
+        }
+    }
+}
+
+.orders-data {
+    display: flex;
+    @include media-breakpoint-down(md) {
+        display: block;
+    }
+    .order-nav {
+        flex: 0 0 166px;
+        max-width: 166px;
+        @include media-breakpoint-down(md){
+            flex: 0 0 100%;
+            max-width: 100%;
+            position: fixed;
+            bottom: -100%;
+            left: 0;
+            right: 0;
+            transition: all .3s ease-in-out;
+            z-index: 9991;
+            &.show {
+                bottom: 0;
+            }
+            .card {
+                background: #293349;
+                border-bottom-left-radius: 0;
+                border-bottom-right-radius: 0;
+            }
+        }
+    }
+    .order-table {
+        width: calc(100% - 166px);
+        padding-left: 30px;
+        @include media-breakpoint-down(md) {
+            width: 100%;
+            padding-left: 0;
+        }
+    }
+}
+
+.table-order {
+    border-collapse: separate;
+    border-spacing: 0 10px;
+    td {
+        padding: 15px 20px;
+    }
+    thead {
+        td {
+            border: 0;
+            color: #595e69;
+            padding-top: 0;
+        }
+    }
+    tbody {
+        tr {
+            td {
+                border: 0;
+                background: linear-gradient(
+                    116.52deg,
+                    rgba(255, 255, 255, 0.11) -0.3%,
+                    rgba(255, 255, 255, 0.1) 81.34%
+                );
+                font-size: 14px;
+                &:first-child {
+                    border-top-left-radius: 15px;
+                    border-bottom-left-radius: 15px;
+                }
+                &:last-child {
+                    border-top-right-radius: 15px;
+                    border-bottom-right-radius: 15px;
+                }
+            }
+        }
+    }
+}
+
+
+.filter-close {
+    position: absolute;
+    right: 15px;
+    display: none;
+    @include media-breakpoint-down(md){
+        display: inline-block;
+    }
+}

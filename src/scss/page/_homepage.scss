@@ -1,0 +1,44 @@
+.hero {
+    padding: 63px 0;
+    h1 {
+        font-weight: 700;
+        font-size: 50px;
+        margin-bottom: 26px;
+        @include media-breakpoint-down(md) {
+            font-size: 30px;
+        }
+    }
+    p {
+        color: rgba(255, 255, 255, 0.5);
+        font-size: 20px;
+        @include media-breakpoint-down(md) {
+            font-size: 16px;
+        }
+    }
+    .btn {
+        margin-top: 26px;
+    }
+    .hero-count {
+        display: flex;
+        text-align: center;
+        margin-top: 26px;
+        flex-wrap: wrap;
+        @include media-breakpoint-down(md){
+            justify-content: space-between;
+        }
+        > div {
+            padding: 20px 40px;
+            &:first-child {
+                padding-left: 0;
+            }
+            @include media-breakpoint-down(md) {
+                padding: 0;
+               
+            }
+        }
+        .count {
+            font-weight: 700;
+            font-size: 30px;
+        }
+    }
+}

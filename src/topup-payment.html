@@ -1,0 +1,46 @@
+{% extends "src/layouts/layouts.html" %}
+{% block header %}
+{% include "src/components/header-logged.html" %}
+{% endblock %}
+{% block content %}
+
+<div class="page-wrapper">
+    <div class="container-lg mb-5">
+        <h1 class="title-3 mb-5 text-center">Payment</h1>
+
+        <div class="card card-wd-858 mb-4">
+            <div class="card-body p-4">
+                <h3 class="title-4">Payment Order</h3>
+                <hr>
+                <div class="d-flex mb-2 text-grey">
+                    <div class="tr-ld">Bank</div>
+                    <div class="mb-1">BCA</div>
+                </div>
+                <div class="d-flex mb-2 text-grey">
+                    <div class="tr-ld">No. Account</div>
+                    <div class="mb-1">12345678</div>
+                </div>
+                <div class="d-flex mb-2 text-grey">
+                    <div class="tr-ld">Full Name</div>
+                    <div class="mb-1">E-Sport Fight Arena</div>
+                </div>
+                <div class="d-flex mb-2 text-grey">
+                    <div class="tr-ld">Total Payment</div>
+                    <div class="mb-1">Rp 500.000</div>
+                </div>
+                <div class="d-flex align-items-center mb-2 text-grey">
+                    <div class="tr-ld">Receipt of Payment</div>
+                    <div class="mb-1">
+                        <input class="form-control" type="file">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mt-5">
+            <a href="order-review-withdraw.html" class="btn btn-gradient-primary wd-289">Submit</a>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

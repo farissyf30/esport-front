@@ -1,0 +1,90 @@
+{% extends "src/layouts/layouts.html" %}
+{% block header %}
+{% include "src/components/header-logged.html" %}
+{% endblock %}
+{% block content %}
+
+<div class="page-wrapper">
+    <div class="container-lg mb-5">
+        <h3 class="text-24 mt-4 mb-4">Withdraw</h3>
+        <div class="form-wd">
+            <div class="platform-currency">
+                <label class="mb-2">Platform Currency</label>
+                <div class="card rounded-10">
+                    <div class="card-body">
+                        <div class="d-flex">
+                            <div>1</div>
+                            <div class="px-4">=</div>
+                            <div>Rp 20.000</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <label class="mb-2">Platform Currency</label>
+                <input type="text" class="form-control">
+            </div>
+            <div class="smd">
+                =
+            </div>
+            <div>
+                <label class="mb-2">Nominal</label>
+                <div class="input-inline is-left">
+                    <span class="input-icon">Rp</span>
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+
+        </div>
+
+        <h4 class="title-4">Confirm your account</h4>
+        <p class="text-grey">Please check your order before proceeding to payment</p>
+        <div class="wd-384">
+            <div class="mb-4">
+                <label class="mb-2">Fullname</label>
+                <input type="text" class="form-control" placeholder="Fullname">
+            </div>
+            <div class="mb-4">
+                <label class="mb-2">ID</label>
+                <input type="text" class="form-control" placeholder="ID">
+            </div>
+            <div class="mb-4">
+                <label class="mb-2">Email</label>
+                <input type="email" class="form-control" placeholder="Email">
+            </div>
+
+
+        </div>
+
+        <h4 class="title-4 mt-5">Withdrawal</h4>
+        <div class="table-responsive table-tp">
+            <table class="table table-order">
+                <thead>
+                    <tr>
+                        <td>Bank</td>
+                        <td>No Account</td>
+                        <td>Fullname</td>
+                        <td></td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>BCA</td>
+                        <td>1234567</td>
+                        <td>Irfan Wildani</td>
+                        <td>
+                            <a href="#">
+                                <i class="ico ico-edit"></i>
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="mt-5">
+            <a href="withdraw-summary.html" class="btn btn-gradient-primary wd-289">Next</a>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

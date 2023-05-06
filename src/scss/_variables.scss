@@ -1,0 +1,54 @@
+$enable-gradients: false;
+$enable-shadows: false;
+$offcanvas-box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+
+// Customize some defaults
+$body-color: #fff;
+$body-bg: #0f1b33;
+// $border-radius: 0;
+$primary: #ff6600;
+$secondary: #273247;
+$dark: #000000;
+$primary-gradient: linear-gradient(214.02deg, #ff6600 6.04%, #ff0d01 92.95%);
+
+$theme-colors: (
+    "primary": $primary,
+    "dark": $dark,
+    "secondary": $secondary,
+);
+
+// $btn-padding-y: 13px;
+$btn-padding-x: 20px;
+
+$popover-header-bg: transparent;
+$popover-border-radius: 0;
+$popover-border-width: 0;
+$popover-body-padding-y: 0;
+$popover-header-padding-y: 0;
+$popover-header-padding-x: 15px;
+$popover-arrow-width: 0;
+$popover-arrow-height: 0;
+
+$input-btn-padding-y: 0.5rem;
+$input-btn-padding-x: 0.75rem;
+
+$input-btn-focus-box-shadow: transparent;
+$form-select-focus-box-shadow: transparent;
+
+$input-group-addon-padding-x: 5px;
+$input-group-addon-bg: transparent;
+
+$dropdown-bg: #283249;
+$dropdown-color: #fff;
+$dropdown-link-color: #fff;
+$dropdown-item-padding-x: 20px;
+$dropdown-link-hover-bg: transparent;
+$dropdown-link-hover-color: $primary;
+
+$card-border-radius: 20px;
+$nav-link-color: #fff;
+$nav-link-hover-color: $primary;
+
+$accordion-icon-transform: none;
+$accordion-button-icon: url("data:image/svg+xml,<svg width='27' height='26' viewBox='0 0 27 26' fill='none' xmlns='http://www.w3.org/2000/svg'><mask id='mask0_220_1175' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='0' y='0' width='27' height='26'><rect width='27' height='26' fill='#D9D9D9'/></mask><g mask='url(#mask0_220_1175)'><circle cx='13.5' cy='13.0845' r='13' fill='#FF6600'/><path d='M19.45 11.8095H15.1V7.55947H11.875V11.8095H7.55V14.8595H11.875V19.1095H15.1V14.8595H19.45V11.8095Z' fill='white'/></g></svg>");
+$accordion-button-active-icon:  url("data:image/svg+xml,<svg width='27' height='27' viewBox='0 0 27 27' fill='none' xmlns='http://www.w3.org/2000/svg'><mask id='mask0_220_1172' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='0' y='0' width='27' height='27'><rect width='27' height='27' fill='#D9D9D9'/></mask><g mask='url(#mask0_220_1172)'><circle cx='13.5' cy='13.5845' r='13' fill='#FF6600'/><path d='M9.8 15.1095V11.9845H16.875V15.1095H9.8Z' fill='white'/></g></svg>");

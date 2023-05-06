@@ -1,0 +1,55 @@
+{% extends "src/layouts/layouts.html" %}
+{% block header %}
+{% include "src/components/header-register.html" %}
+{% endblock %}
+{% block content %}
+
+<div class="page-wrapper">
+    <div class="auth-container">
+        <div class="container-lg">
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <h1 class="title-h1 mb-4 mt-4">
+                        Sign Up
+                    </h1>
+                    <div class="auth-form">
+                        <form action="#">
+                            <div class="mb-4">
+                                <label class="mb-2">Fullname</label>
+                                <input type="text" class="form-control" placeholder="Enter your Fullname">
+                            </div>
+                            <div class="mb-4">
+                                <label class="mb-2">Username</label>
+                                <input type="text" class="form-control" placeholder="Enter your Username">
+                            </div>
+                            <div class="mb-4">
+                                <label class="mb-2">Squad Name</label>
+                                <input type="text" class="form-control" placeholder="Enter your Squad Name">
+                            </div>
+                            <div class="mb-4">
+                                <label class="mb-2">Email</label>
+                                <input type="email" class="form-control" placeholder="Enter your Email">
+                            </div>
+                            <div class="mb-4">
+                                <label class="mb-2">Password</label>
+                                <input type="password" class="form-control" placeholder="Enter your password">
+                            </div>
+                            <div class="mb-5">
+                                <label class="mb-2">Password Confirmation</label>
+                                <input type="password" class="form-control"
+                                    placeholder="Enter your password confirmation">
+                            </div>
+                            <button type="submit" class="btn btn-gradient-primary w-100">Create an account</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <img src="images/Illustration-login.svg" class="img-fluid" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+{% endblock %}

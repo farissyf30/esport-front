@@ -1,0 +1,48 @@
+{% extends "src/layouts/layouts.html" %}
+{% block header %}
+{% include "src/components/header-logged.html" %}
+{% endblock %}
+{% block content %}
+
+<div class="page-wrapper">
+    <img src="images/excahange-cover.jpg" class="img-fluid" alt="">
+    <div class="container-lg mb-5">
+        <div class="row align-items-center mt-4">
+            <div class="col-md-8 my-3">
+                <h1 class="title-3 mb-3">Call of Duty Points</h1>
+                <div class="d-flex align-items-center">
+                    <div>
+                        <img src="images/game-stick.svg" class="img-fluid" alt="">
+                    </div>
+                    <div class="ps-2 text-grey">
+                        Call of Duty Mobile
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 my-3">
+                <div class="brand-shop">
+                    <div>
+                        <div class="product-logo">
+                            <img src="images/eva-logo.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="ps-3">
+                        <p class="mb-0 text-grey">Organized by</p>
+                        <h3>E-Sport Fight Arena</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <div class="text-center mt-5">
+            <h3 class="title-3">Order Review</h3>
+            <p class="text-grey">
+                Thankyou so much for your purchase! You will receive your email confirmation shortly.
+            </p>
+        </div>
+
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,80 @@
+{% extends "src/layouts/layouts.html" %}
+{% block header %}
+{% include "src/components/header-logged.html" %}
+{% endblock %}
+{% block content %}
+
+<div class="page-wrapper">
+    <div class="container-lg mb-5">
+        <h1 class="title-3 mb-5 mt-4 text-center">Check Out Order</h1>
+
+        <div class="card card-wd-858 mb-4">
+            <div class="card-body p-4">
+                <h3 class="title-4">Voucher Game</h3>
+                <hr>
+                <h3 class="text-24">Call of Duty Points</h3>
+
+                <div class="d-flex text-grey my-4">
+                    <div>
+                        <img src="images/stick.svg" alt="">
+                    </div>
+                    <div class="ps-3">
+                        Mobile legend : Bang-bang
+                    </div>
+                </div>
+
+                <div class="d-flex mb-2 text-grey">
+                    <div class="tr-ld">COD Points</div>
+                    <div class="mb-1">80</div>
+                </div>
+                <div class="d-flex mb-2">
+                    <div class="tr-ld">TOTAL CURRENCY</div>
+                    <div class="mb-1">5</div>
+                </div>
+            </div>
+        </div>
+        <div class="card card-wd-858 mb-4">
+            <div class="card-body p-4">
+                <h3 class="title-4">Account Information</h3>
+                <hr>
+                <div class="d-flex mb-2 text-grey">
+                    <div class="tr-ld">Nama</div>
+                    <div class="mb-1">Irfan</div>
+                </div>
+                <div class="d-flex mb-2 text-grey">
+                    <div class="tr-ld">Player / User ID</div>
+                    <div class="mb-1">12345678</div>
+                </div>
+                <div class="d-flex mb-2 text-grey">
+                    <div class="tr-ld">Email</div>
+                    <div class="mb-1">Irfan@gmail.com</div>
+                </div>
+            </div>
+        </div>
+        <div class="card card-wd-858 mb-4">
+            <div class="card-body p-4">
+                <h3 class="title-4">Payout</h3>
+                <hr>
+                <div class="d-flex mb-2 text-grey">
+                    <div class="tr-ld">Bank</div>
+                    <div class="mb-1">BCA</div>
+                </div>
+                <div class="d-flex mb-2 text-grey">
+                    <div class="tr-ld">No Account</div>
+                    <div class="mb-1">12345678</div>
+                </div>
+                <div class="d-flex mb-2 text-grey">
+                    <div class="tr-ld">Fullname</div>
+                    <div class="mb-1">Irfan Wildani</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mt-5">
+            <a href="order-review.html" class="btn btn-gradient-primary wd-289">Paid</a>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

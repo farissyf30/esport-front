@@ -1,0 +1,91 @@
+{% extends "src/layouts/layouts.html" %}
+{% block header %}
+{% include "src/components/header-logged.html" %}
+{% endblock %}
+{% block content %}
+
+<div class="page-wrapper">
+    <div class="container-lg mb-5">
+        <h1 class="title-3 my-4">Your Account</h1>
+        <ul class="nav nav-setting">
+            <li class="nav-item">
+                <a href="setting-password.html" class="nav-link">Password</a>
+            </li>
+            <li class="nav-item">
+                <a href="setting-order.html" class="nav-link active">Orders</a>
+            </li>
+            <li class="nav-item">
+                <a href="setting-deactive.html" class="nav-link">Deactive Account</a>
+            </li>
+        </ul>
+        <div class="orders-data">
+            <a href="#" class="filter-btn"><i class="ico ico-filter ico-white"></i> Filter</a>
+            <div class="order-nav">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-header pt-0 pb-3 text-center">
+                            Status
+                            <a href="#" class="filter-close">
+                                <i class="ico ico-close ico-white"></i>
+                            </a>
+                        </div>
+                        <div class="nav flex-column mt-3">
+                            <a href="#" class="nav-link px-1 active">All</a>
+                            <a href="#" class="nav-link px-1">Paid</a>
+                            <a href="#" class="nav-link px-1">Pending</a>
+                            <a href="#" class="nav-link px-1">Cancel</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="order-table">
+                <div class="table-responsive">
+                    <table class="table table-order">
+                        <thead>
+                            <tr>
+                                <td>Order Number</td>
+                                <td>Date</td>
+                                <td>Customer Email</td>
+                                <td>Customer Name</td>
+                                <td>Orders</td>
+                                <td>Status</td>
+                                <td>Total</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>001</td>
+                                <td>02/12/2022</td>
+                                <td>irfan@gmail.com</td>
+                                <td>Irfan Wildan</td>
+                                <td>Diamond Mobile Legend</td>
+                                <td>Paid</td>
+                                <td>5</td>
+                            </tr>
+                            <tr>
+                                <td>002</td>
+                                <td>02/12/2022</td>
+                                <td>irfan@gmail.com</td>
+                                <td>Irfan Wildan</td>
+                                <td>Diamond Mobile Legend</td>
+                                <td>Paid</td>
+                                <td>5</td>
+                            </tr>
+                            <tr>
+                                <td>003</td>
+                                <td>02/12/2022</td>
+                                <td>irfan@gmail.com</td>
+                                <td>Irfan Wildan</td>
+                                <td>Diamond Mobile Legend</td>
+                                <td>Paid</td>
+                                <td>5</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,137 @@
+.profile-header {
+    .cover {
+        position: relative;
+        height: 0;
+        width: 100%;
+        padding-bottom: 219px;
+        overflow: hidden;
+        img {
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            position: absolute;
+            object-fit: cover;
+            object-position: top center;
+        }
+        .edit-cover {
+            position: absolute;
+            right: 15px;
+            bottom: 15px;
+            background: rgba($color: #fff, $alpha: 0.5);
+            padding: 5px 8px;
+            z-index: 999;
+            border-radius: 9px;
+            overflow: hidden;
+            cursor: pointer;
+            input {
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 0;
+                height: 100%;
+                opacity: 0;
+                cursor: pointer;
+            }
+        }
+    }
+    .profile-content {
+        position: relative;
+        margin-top: -70px;
+        display: flex;
+        padding: 0 70px;
+        @include media-breakpoint-down(md) {
+            padding: 0 25px;
+        }
+        @include media-breakpoint-down(sm) {
+            padding: 0 15px;
+        }
+        .profile-img {
+            width: 140px;
+            height: 0;
+            padding-bottom: 140px;
+            border-radius: 50%;
+            background: #cbc5f0;
+            overflow: hidden;
+            position: relative;
+            @include media-breakpoint-down(sm) {
+                width: 80px;
+                padding-bottom: 80px;
+            }
+            img {
+                width: 100%;
+                height: 100%;
+                left: 0;
+                top: 0;
+                position: absolute;
+                object-fit: cover;
+            }
+            .edit-profile {
+                position: absolute;
+                right: 15px;
+                bottom: 15px;
+                background: rgba($color: #fff, $alpha: 0.5);
+                padding: 5px 8px;
+                z-index: 999;
+                border-radius: 50%;
+                overflow: hidden;
+                cursor: pointer;
+                input {
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    top: 0;
+                    height: 100%;
+                    opacity: 0;
+                    cursor: pointer;
+                }
+            }
+        }
+        .profile-data {
+            padding-left: 36px;
+            @include media-breakpoint-down(sm) {
+                padding-left: 15px;
+            }
+            .name {
+                font-weight: 600;
+                font-size: 20px;
+                margin-bottom: 5px;
+            }
+            .since {
+                font-weight: 400;
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+.card-gr {
+    background: linear-gradient(92.01deg, rgba(255, 255, 255, 0.02) -8.99%, rgba(255, 255, 255, 0.14) 101.74%);
+    border-radius: 5px;
+    border-radius: 5px;
+    border: 2px #868c98 solid;
+    color: rgba($color: #fff, $alpha: 0.6);
+    .count {
+        font-weight: 700;
+        font-size: 36px;
+    }
+    p {
+        font-weight: 500;
+        font-size: 18px;
+    }
+    &.total-match {
+        max-width: 273px;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+    .divider {
+        border-left: 1px solid #ffffff;
+        width: 100%;
+    }
+    .trop {
+        flex: 0 0 78px;
+        max-width: 78px;
+        text-align: center;
+        padding-right: 8px;
+    }
+}

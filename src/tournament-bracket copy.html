@@ -1,0 +1,285 @@
+{% extends "src/layouts/layouts.html" %}
+{% block header %}
+{% include "src/components/header-logged.html" %}
+{% endblock %}
+{% block content %}
+<div class="page-wrapper">
+    <img src="images/excahange-cover.jpg" class="img-fluid" alt="">
+    <div class="container-lg mb-5">
+        <div class="row align-items-center mt-4">
+            <div class="col-md-8 my-3">
+                <h1 class="title-3 mb-3">Call of Duty Points</h1>
+                <div class="d-flex flex-wrap">
+                    <div class="d-flex align-items-center me-5 mb-3">
+                        <div>
+                            <img src="images/user.svg" class="img-fluid" alt="">
+                        </div>
+                        <div class="ps-2 text-grey">
+                            30 Participants
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center me-5 mb-3">
+                        <div>
+                            <img src="images/trop.svg" class="img-fluid" alt="">
+                        </div>
+                        <div class="ps-2 text-grey">
+                            Single elimination
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center me-5 mb-3">
+                        <div>
+                            <img src="images/game-stick.svg" class="img-fluid" alt="">
+                        </div>
+                        <div class="ps-2 text-grey">
+                            Call of Duty Mobile
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center me-5 mb-3">
+                        <div>
+                            <img src="images/calendar.svg" class="img-fluid" alt="">
+                        </div>
+                        <div class="ps-2 text-grey">
+                            25 December 2022 at 10:00 WIB
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 my-3">
+                <div class="brand-shop">
+                    <div>
+                        <div class="product-logo">
+                            <img src="images/eva-logo.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="ps-3">
+                        <p class="mb-0 text-grey">Organized by</p>
+                        <h3>E-Sport Fight Arena</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <h3 class="title-4 my-5">Bracket</h3>
+        <div class="bracket-scroll">
+            <div class="my_gracket"> </div>
+        </div>
+        <!-- <div class="bracket-scroll">
+            <div class="bracket">
+                <ul class="round round-1">
+                    <li class="vs">
+                        <ul class="participants">
+                            <li>Bigetron E-Sports</li>
+                            <li>Bigetron E-Sports</li>
+                        </ul>
+                    </li>
+                    <li class="vs">
+                        <ul class="participants">
+                            <li>Bigetron E-Sports</li>
+                            <li>Bigetron E-Sports</li>
+                        </ul>
+                    </li>
+                    <li class="vs">
+                        <ul class="participants">
+                            <li>Bigetron E-Sports</li>
+                            <li>Bigetron E-Sports</li>
+                        </ul>
+                    </li>
+                    <li class="vs">
+                        <ul class="participants">
+                            <li>Bigetron E-Sports</li>
+                            <li>Bigetron E-Sports</li>
+                        </ul>
+                    </li>
+                    <li class="vs">
+                        <ul class="participants">
+                            <li>Bigetron E-Sports</li>
+                            <li>Bigetron E-Sports</li>
+                        </ul>
+                    </li>
+                    <li class="vs">
+                        <ul class="participants">
+                            <li>Bigetron E-Sports</li>
+                            <li>Bigetron E-Sports</li>
+                        </ul>
+                    </li>
+                    <li class="vs">
+                        <ul class="participants">
+                            <li>Bigetron E-Sports</li>
+                            <li>Bigetron E-Sports</li>
+                        </ul>
+                    </li>
+                    <li class="vs">
+                        <ul class="participants">
+                            <li>Bigetron E-Sports</li>
+                            <li>Bigetron E-Sports</li>
+                        </ul>
+                    </li>
+                    <li class="vs">
+                        <ul class="participants">
+                            <li>Bigetron E-Sports</li>
+                            <li>Bigetron E-Sports</li>
+                        </ul>
+                    </li>
+                    <li class="vs">
+                        <ul class="participants">
+                            <li>Bigetron E-Sports</li>
+                            <li>Bigetron E-Sports</li>
+                        </ul>
+                    </li>
+                    <li class="vs">
+                        <ul class="participants">
+                            <li>Bigetron E-Sports</li>
+                            <li>Bigetron E-Sports</li>
+                        </ul>
+                    </li>
+                    <li class="vs">
+                        <ul class="participants">
+                            <li>Bigetron E-Sports</li>
+                            <li>Bigetron E-Sports</li>
+                        </ul>
+                    </li>
+                    <li class="vs">
+                        <ul class="participants">
+                            <li>Bigetron E-Sports</li>
+                            <li>Bigetron E-Sports</li>
+                        </ul>
+                    </li>
+                    <li class="vs">
+                        <ul class="participants">
+                            <li>Bigetron E-Sports</li>
+                            <li>Bigetron E-Sports</li>
+                        </ul>
+                    </li>
+                    <li class="vs">
+                        <ul class="participants">
+                            <li>Bigetron E-Sports</li>
+                            <li>Bigetron E-Sports</li>
+                        </ul>
+                    </li>
+                    <li class="vs">
+                        <ul class="participants">
+                            <li>Bigetron E-Sports</li>
+                            <li>Bigetron E-Sports</li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="round round-2">
+                    <li class="vs">
+                        <ul class="participants">
+                            <li>Bigetron E-Sports</li>
+                            <li>Bigetron E-Sports</li>
+                        </ul>
+                    </li>
+                    <li class="vs">
+                        <ul class="participants">
+                            <li>Bigetron E-Sports</li>
+                            <li>Bigetron E-Sports</li>
+                        </ul>
+                    </li>
+                    <li class="vs">
+                        <ul class="participants">
+                            <li>Bigetron E-Sports</li>
+                            <li>Bigetron E-Sports</li>
+                        </ul>
+                    </li>
+                    <li class="vs">
+                        <ul class="participants">
+                            <li>Bigetron E-Sports</li>
+                            <li>Bigetron E-Sports</li>
+                        </ul>
+                    </li>
+                    <li class="vs">
+                        <ul class="participants">
+                            <li>Bigetron E-Sports</li>
+                            <li>Bigetron E-Sports</li>
+                        </ul>
+                    </li>
+                    <li class="vs">
+                        <ul class="participants">
+                            <li>Bigetron E-Sports</li>
+                            <li>Bigetron E-Sports</li>
+                        </ul>
+                    </li>
+                    <li class="vs">
+                        <ul class="participants">
+                            <li>Bigetron E-Sports</li>
+                            <li>Bigetron E-Sports</li>
+                        </ul>
+                    </li>
+                    <li class="vs">
+                        <ul class="participants">
+                            <li>Bigetron E-Sports</li>
+                            <li>Bigetron E-Sports</li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="round round-3">
+                    <li class="vs">
+                        <ul class="participants">
+                            <li>Bigetron E-Sports</li>
+                            <li>Bigetron E-Sports</li>
+                        </ul>
+                    </li>
+                    <li class="vs">
+                        <ul class="participants">
+                            <li>Bigetron E-Sports</li>
+                            <li>Bigetron E-Sports</li>
+                        </ul>
+                    </li>
+                    <li class="vs">
+                        <ul class="participants">
+                            <li>Bigetron E-Sports</li>
+                            <li>Bigetron E-Sports</li>
+                        </ul>
+                    </li>
+                    <li class="vs">
+                        <ul class="participants">
+                            <li>Bigetron E-Sports</li>
+                            <li>Bigetron E-Sports</li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="round semifinal">
+                    <li class="vs">
+                        <ul class="participants">
+                            <li>Bigetron E-Sports</li>
+                            <li>Bigetron E-Sports</li>
+                        </ul>
+                    </li>
+                    <li class="vs">
+                        <ul class="participants">
+                            <li>Bigetron E-Sports</li>
+                            <li>Bigetron E-Sports</li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="round final">
+                    <li class="vs">
+                        <ul class="participants">
+                            <li>Bigetron E-Sports</li>
+                            <li>Bigetron E-Sports</li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="round winner">
+                    <li class="vs">
+                        <ul class="participants">
+                            <li>Bigetron E-Sports</li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </div>
+        </div> -->
+
+    </div>
+</div>
+
+<div class="discord-chat">
+    <img src="images/discord.png" alt="">
+</div>
+
+
+
+{% endblock %}
